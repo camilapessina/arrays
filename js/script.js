@@ -40,13 +40,13 @@ function showList(array) {
 
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  // Filtra los elementos para mantener solo los strings
-  const stringsArray = strangeArray.filter(element => typeof element === 'string');
   
-  // Ordena alfabéticamente
-  stringsArray.sort((a, b) => a.localeCompare(b));
+  const filterArray = strangeArray.filter(element => typeof element === 'string');
+  
+  
+  filterArray.sort((a, b) => a.localeCompare(b));
   
   // Muestra el array filtrado y ordenado en pantalla
-  showList(stringsArray);
+  showList(filterArray);
 });
 
